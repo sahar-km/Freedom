@@ -7,7 +7,7 @@ import { connect } from "cloudflare:sockets";
 let userID = "7fff5c98-b6ae-4081-92e0-3f510e256741";
 
 
-const proxyIPs = ['workers.cloudflare.cyou', 'workers.bestip.one']; // OR use  ['cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org'];
+const proxyIPs = ['workers.cloudflare.cyou']; // OR use  ['cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org'];
 
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 
@@ -173,7 +173,7 @@ export default {
                             await updateDataset(
                             env,
                             host, 
-                            "https://8.8.8.8/dns-query", 
+                            "https://94.140.14.14/dns-query",
                             "1.1.1.1", 
                             "100", 
                             "200", 
